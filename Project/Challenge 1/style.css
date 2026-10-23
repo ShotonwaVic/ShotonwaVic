@@ -1,0 +1,122 @@
+
+
+
+*{
+    padding:0; 
+    margin: 0; 
+    }
+
+.container{
+    min-height:100vh; 
+    display:flex;
+    flex-direction:column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    background:white; 
+    padding:100px 20px;
+
+    .head {
+        position: relative; 
+        background: rgb(27, 24, 24); 
+        color: white; 
+        width: 770px; 
+        padding: 180px 65px 70px;
+        border: 6px solid rgb(210, 204, 204); 
+        height:250px;
+
+        .title {
+            position: absolute; 
+            top: 16%; 
+            left: 7%; 
+            width: calc(100% - 60%); 
+            background: #ff0090; 
+            padding: 30px 20px; 
+            border-radius: 10px; 
+            text-align: center; 
+            color: black; 
+            margin-left:50px; 
+            z-index:1; 
+            font-size: 18px; 
+            font-weight: bold;
+        
+        }
+
+        .content{
+            position:relative; 
+            background:white; 
+            color: black; 
+            width:60%; 
+            padding:20px; 
+            font-size:25px; 
+            border-radius:10px; 
+            border: 2px solid black; 
+            line-height:1.5; 
+            top:-80px; 
+            display:flex; 
+            height: 280px; 
+            justify-content: center;
+            align-items: flex-end; 
+            text-align: left;}  
+    }
+
+    
+}
+
+@media(max-width:768px){
+    body{margin: 0;}
+    .container{
+        padding: 0;
+        margin: 30px;
+        .head{
+            width:100%;
+            
+        .title{
+            padding: 15px 10px;
+            font-size: 16px;
+            left: 6%;} 
+            .content{
+            width:100%;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 10px;
+            height: 250px;
+
+
+        }
+    }
+}
+}
+
+
+@media(max-width:480px){
+    body{margin: 0;}
+    .container{
+        padding: 0;
+        margin: 30px;
+        .head{
+            width:300px;
+            height: 200px;
+            
+        .title{
+            padding: 30px;
+            font-size: 13px;
+            left: 6%;} 
+            .content{
+            width:300px;
+            padding: 0;
+            font-size: 16px;
+            text-align: left;
+            display: flex;
+            justify-content: flex-start;
+            padding-left: 10px;
+            height: 250px;
+
+
+        }
+    }
+}
+
+}
